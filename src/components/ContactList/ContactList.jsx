@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { node } from 'prop-types';
 import { ListItem, ButtonDelete, TextContact } from './ContactList.styled';
+
 const ContactList = ({contacts, onDeleteContact}) => {
     return (
        <ul>{contacts.map(({ id, name, number }) => {
